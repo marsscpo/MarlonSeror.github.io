@@ -1,0 +1,39 @@
+h2{
+    margin-top: 15%;
+    text-align: center;
+    margin: auto;
+    color: darkred;
+}
+
+main div ul li{
+    width:75%;
+    margin:auto;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+main div ul{
+    list-style: none;
+    padding: 0px;
+}
+
+@media screen and (min-width:750px){
+
+    main div ul{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div ul li{
+        
+        
+        margin: 5px;
+        margin-top: 10px;
+        flex : 1 1 40%;
+
+    }
+}

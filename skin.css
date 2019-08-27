@@ -1,0 +1,115 @@
+body{
+    background-color: white;
+    box-sizing: border-box;
+    margin: auto;
+    width: 75%;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+
+header h1 a{
+    color: rgb(180, 0, 36);
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 3.5em;
+}
+
+nav{
+    flex-grow: 2;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 2%;
+    
+}
+
+nav ul li a{
+    color: crimson;
+    text-decoration: none;
+    transition: 0.75s ease-in-out;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 110%;
+}
+
+nav ul li a:hover{
+   border-top: 1px solid rgba(185, 7, 43, 0.836);
+   border-bottom: 1px solid crimson;
+    
+}
+
+
+main h2{
+    color: crimson;
+}
+
+main figure{
+
+    float: left; 
+}
+
+main ul{
+
+    padding-left: 15px;
+}
+
+
+
+.main_txt{
+
+    text-align: justify; 
+    clear: both;
+    margin-bottom: 2.5%;
+}
+
+footer{
+    background-color: darkred;
+    border-top: 2px;
+    border: 2px solid white;
+    height:65px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+
+hr{
+
+    border: 1.25px solid rgba(177, 13, 43, 0.63);
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    margin-top: 2%;
+}
+
+
+
+
+@media screen and (min-width:850px){
+    .main_txt{
+        clear: none;
+        margin-bottom: 5%;
+    }
+    
+    main figure{
+        float:left;
+        margin-left: 0px;
+    }
+
+    main figure img{
+        float:left;
+    }
+}
