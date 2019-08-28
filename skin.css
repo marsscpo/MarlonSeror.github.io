@@ -17,6 +17,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
 
 }
 
@@ -103,6 +104,10 @@ hr{
     margin-top: 2%;
 }
 
+figure{
+    margin-left: 0px;
+}
+
 
 
 
@@ -120,4 +125,9 @@ hr{
     main figure img{
         float:left;
     }
+
+    header{
+        flex-wrap: nowrap;
+    }
 }
+
