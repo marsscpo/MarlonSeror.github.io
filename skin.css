@@ -3,6 +3,14 @@ body{
     box-sizing: border-box;
     margin: auto;
     width: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body a {
+    color: #000001;
+}
+body a:hover {
+    color: rgb(74, 84, 181);
 }
 
 header{
@@ -13,7 +21,7 @@ header{
 }
 
 header h1 a{
-    color: rgb(180, 0, 36);
+    color: rgb(74, 84, 181);
     text-decoration: none;
 }
 
@@ -38,7 +46,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: crimson;
+    color: rgb(74, 84, 181);
     text-decoration: none;
     transition: 0.75s ease-in-out;
     border-top: 1px solid transparent;
@@ -47,14 +55,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-   border-top: 1px solid rgba(185, 7, 43, 0.836);
-   border-bottom: 1px solid crimson;
+   border-top: 1px solid rgb(74, 84, 181);
+   border-bottom: 1px solid rgb(74, 84, 181);
     
 }
 
 
 main h2{
-    color: crimson;
+    color: rgb(74, 84, 181);
 }
 
 main figure{
@@ -77,7 +85,7 @@ main ul{
 }
 
 footer{
-    background-color: darkred;
+    background-color: rgb(74, 84, 181);
     border-top: 2px;
     border: 2px solid white;
     height:65px;
@@ -88,7 +96,7 @@ footer{
 
 hr{
 
-    border: 1.25px solid rgba(177, 13, 43, 0.63);
+    border: 1.25px solid rgb(74, 84, 181);
     margin-left: auto;
     margin-right: auto;
     clear: both;
