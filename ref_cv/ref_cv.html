@@ -15,7 +15,7 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../research/research.html">Research</a></li>
-                    <li><a href="#">Reference & CV</a></li>
+                    <li><a href="#">References & CV</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -26,10 +26,19 @@
             <div class="ref">
                     <h2>References</h2>
                     <ul>
-                        <li><p>Prenom Nom</p>
-                            <p>Contact detail</p></li>
-                        <li><p>Prenom Nom</p>
-                            <p>Contact detail</p></li>
+                        <li><p><b>Prof. Richard B. Freeman</b></p>
+                            <p>Harvard University and NBER</p>
+                            <p>1050 Massachusetts Avenue</p>
+                            <p>Cambridge, MA02138, U.S.A.</p>
+                            <p>+1 617-588-0305</p>
+                            <p><a id="mailfreeman"></a></p>
+                            <p>Assistant: Jennifer Amadeo-Holl</p>
+                            <p>+1 617-588-0303</p>
+                            <p><a id="mailjennifer"></a></p>
+                        
+                        </li>
+                        <li><p>Prof. Flore Gubert (advisor)</p>
+                            <p>Director, Département Société, IRD and PSE</p></li>
                             <li><p>Prenom Nom</p>
                             <p>Contact detail</p></li>
                         <li><p>Prenom Nom</p>
@@ -38,12 +47,45 @@
                 </div>
                 <hr/>
                 <div class="cv">
-                    <h2>CV</h2>
+                    <a href="https://www.parisschoolofeconomics.eu/docs/seror-marlon/resume-seror-marlon.pdf"><h2>CV</h2>></a>
                 </div>
         </main>
-
-
-
-               
+      
     </body>
+
+    <script>
+        var user = 'freeman',
+        domain = 'nber.org',
+        element = document.getElementById('mailfreeman');
+
+        element.innerHTML = user + '@' + domain;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "mailto:freeman@nber.org");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:black;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+    <script>
+        var user = 'jennifer',
+        domain = 'nber.org',
+        element = document.getElementById('mailjennifer');
+
+        element.innerHTML = user + '@' + domain;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "mailto:jennifer@nber.org");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:black;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
 </html>

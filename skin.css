@@ -6,11 +6,15 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.top-5 {
+    margin-top: 5%;
+ }
+
 body a {
     color: #000001;
 }
 body a:hover {
-    color: rgb(74, 84, 181);
+    color: rgb(53, 56, 83);
 }
 
 header{
@@ -22,7 +26,7 @@ header{
 }
 
 header h1 a{
-    color: rgb(74, 84, 181);
+    color: rgb(53, 56, 83);
     text-decoration: none;
 }
 
@@ -47,7 +51,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: rgb(74, 84, 181);
+    color: rgb(53, 56, 83);
     text-decoration: none;
     transition: 0.75s ease-in-out;
     border-top: 1px solid transparent;
@@ -56,19 +60,26 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-   border-top: 1px solid rgb(74, 84, 181);
-   border-bottom: 1px solid rgb(74, 84, 181);
+   border-top: 1px solid rgb(53, 56, 83);
+   border-bottom: 1px solid rgb(53, 56, 83);
     
 }
 
 
 main h2{
-    color: rgb(74, 84, 181);
+    color: rgb(53, 56, 83);
 }
 
 main figure{
 
     float: left; 
+    margin-left: 0px;
+    box-sizing: content-box;
+    width:50%;
+}
+
+main figure img{
+    width: 70%;
 }
 
 main ul{
@@ -86,7 +97,7 @@ main ul{
 }
 
 footer{
-    background-color: rgb(74, 84, 181);
+    background-color: rgb(53, 56, 83);
     border-top: 2px;
     border: 2px solid white;
     height:65px;
@@ -97,16 +108,13 @@ footer{
 
 hr{
 
-    border: 1.25px solid rgb(74, 84, 181);
+    border: 1.25px solid rgb(53, 56, 83);
     margin-left: auto;
     margin-right: auto;
     clear: both;
     margin-top: 2%;
 }
 
-figure{
-    margin-left: 0px;
-}
 
 
 
@@ -117,11 +125,6 @@ figure{
         margin-bottom: 5%;
     }
     
-    main figure{
-        float:left;
-        margin-left: 0px;
-    }
-
     main figure img{
         float:left;
     }
@@ -130,4 +133,3 @@ figure{
         flex-wrap: nowrap;
     }
 }
-
