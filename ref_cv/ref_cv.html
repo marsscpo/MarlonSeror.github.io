@@ -27,6 +27,8 @@
                     <h2>References</h2>
                     <ul>
                         <li><p><b>Prof. Richard B. Freeman</b></p>
+                            <small>
+                            <p>Herbert Ascherman Professor of Economics</p>
                             <p>Harvard University and NBER</p>
                             <p>1050 Massachusetts Avenue</p>
                             <p>Cambridge, MA02138, U.S.A.</p>
@@ -35,14 +37,42 @@
                             <p>Assistant: Jennifer Amadeo-Holl</p>
                             <p>+1 617-588-0303</p>
                             <p><a id="mailjennifer"></a></p>
-                        
+                            </small>
                         </li>
-                        <li><p>Prof. Flore Gubert (advisor)</p>
-                            <p>Director, Département Société, IRD and PSE</p></li>
-                            <li><p>Prenom Nom</p>
-                            <p>Contact detail</p></li>
-                        <li><p>Prenom Nom</p>
-                            <p>Contact detail</p></li>
+
+                        <li><p><b>Prof. Flore Gubert (advisor)</b></p>
+                            <small>
+                            <p>Director Département Société IRD and Affiliate Professor PSE</p>
+                            <p>4, rue d'Enghien</p>
+                            <p>75010 Paris, France</p>
+                            <p>+33 (0) 1-53-24-14-50</p>
+                            <p><a id="mailflore"></a></p>
+                            </small>
+                        </li>
+
+                        <li><p><b>Prof. Stephan Heblich</b></p>
+                            <small>
+                            <p>Associate Professor and Munk Chair of Economics</p>
+                            <p>Munk School of Global Affairs and Public Policy</p>
+                            <p>University of Toronto</p>
+                            <p>1 Devonshire Place</p>
+                            <p>Toronto, ON</p>
+                            <p>M5S 3K7, Canada</p>
+                            <p></p>
+                            <p><a id="mailstephan"></a></p>
+                            </small>
+                        </li>
+                        <li><p><b>Prof. Clément Imbert</b></p>
+                            <small>
+                            <p>Assistant Professor</p>
+                            <p>University of Warwick</p>
+                            <p>Department of Economics</p>
+                            <p>Coventry CV4 7AL, U.K.</p>
+                            <p>+44 (0) 24-76-573463</p>
+                            <p><a id="mailclement"></a></p>
+                            </small>
+                        </li>
+                    
                     </ul>
                 </div>
                 <hr/>
@@ -87,5 +117,55 @@
         }, false);
 
     </script>
+    <script>
+        var user = 'gubert',
+        domain = 'dial.prd.fr',
+        element = document.getElementById('mailflore');
 
+        element.innerHTML = user + '@' + domain;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "mailto:gubert@dial.prd.fr");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:black;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+    <script>
+            var user = 'stephan.heblich',
+            domain = 'utoronto.ca',
+            element = document.getElementById('mailstephan');
+    
+            element.innerHTML = user + '@' + domain;
+            element.setAttribute("style", "color:black; text-decoration:none;");
+            element.setAttribute("href", "mailto:stephan.heblich@utoronto.ca");
+    
+            element.addEventListener("mouseover", function( event){
+                event.target.setAttribute("style", "text-decoration:underline; color:black;");
+            }, false);
+            element.addEventListener("mouseleave", function( event){
+                event.target.setAttribute("style", "text-decoration:none; color:black;");
+            }, false);
+    
+    </script>
+    <script>
+            var user = 'c.imbert',
+            domain = 'warwick.ac.uk',
+            element = document.getElementById('mailclement');
+    
+            element.innerHTML = user + '@' + domain;
+            element.setAttribute("style", "color:black; text-decoration:none;");
+            element.setAttribute("href", "mailto:c.imbert@warwick.ac.uk");
+    
+            element.addEventListener("mouseover", function( event){
+                event.target.setAttribute("style", "text-decoration:underline; color:black;");
+            }, false);
+            element.addEventListener("mouseleave", function( event){
+                event.target.setAttribute("style", "text-decoration:none; color:black;");
+            }, false);
+    
+        </script>
 </html>
