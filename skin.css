@@ -82,6 +82,18 @@ main figure img{
     width: 70%;
 }
 
+main illustration{
+
+    float: right; 
+    margin-left: 25px;
+    box-sizing: content-box;
+    width: 40%;
+}
+
+main illustration img{
+    width: 100%;
+}
+
 main ul{
 
     padding-left: 15px;
