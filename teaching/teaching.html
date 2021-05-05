@@ -26,13 +26,13 @@
         <main>
             <div class="Current">
                     <h2>Current</h2>
-                    Development Economics (grad level) at the <a href="https://economie.esg.uqam.ca/"target="_blank">Université du Québec à Montréal (UQ&Agrave;M)</a>.
+                    <b>Development Economics</b> (grad), <b>Microeconomics</b> (undergrad), and <b>Research Seminar</b> (grad) at the <a id="affiliation"></a>.
             </div>
             <p class="top-5"></p> 
             <div class="Past">    
                     <h2>Past</h2>
-                    <p>Founder and organizer of <i><b>Flickonomics</b></i>, the economics film club of the <a href="http://www.bristol.ac.uk/"target="_blank">University of Bristol</a> (see the poster for the latest showing below). Financed by two grants from the Teaching Innovation Fund.</p>
-                    <p>Professor/Lecturer, <b>Mathematics</b> and <b>Statistics</b> (both at undergraduate level), <a href="https://www.sciencespo.fr/"target="_blank">Sciences Po (Paris)</a>. I designed the syllabus, course materials, and exams.</p>
+                    <p>Founder and organizer of <i><b>Flickonomics</b></i>, the economics film club of the <a id="bristol"></a> (see the poster for the latest showing below). Financed by two grants from the Teaching Innovation Fund.</p>
+                    <p>Professor/Lecturer, <b>Mathematics</b> and <b>Statistics</b> (both at undergraduate level), <a id="scpo"></a>. I designed the syllabus, course materials, and exams.</p>
                 </div>
             <p class="top-5"></p> 
                 <img src ="../pictures/Flickonomics_Black Panther.jpg" width="700" height="350" alt="Flickonomics_poster" class="center"/>
@@ -43,4 +43,54 @@
 
                
     </body>
+
+    <script>
+        var institution = 'Université du Québec à Montréal (UQAM)',
+        element = document.getElementById('affiliation');
+
+        element.innerHTML = institution;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "https://economie.esg.uqam.ca");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
+    <script>
+        element = document.getElementById('bristol');
+
+        element.innerHTML = 'University of Bristol';
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "http://www.bristol.ac.uk/");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
+    <script>
+        element = document.getElementById('scpo');
+
+        element.innerHTML = 'Sciences Po (Paris)';
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "https://www.sciencespo.fr/");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
 </html>

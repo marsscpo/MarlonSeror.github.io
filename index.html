@@ -30,7 +30,9 @@
             <div class="main_txt">
                     <!--<h3 id="marlon">Marlon Seror</h3>-->
                     <p>Welcome to my website!</p> 
-                    <p>I am an assistant professor at the <a href="https://economie.esg.uqam.ca/"target="_blank">Université du Québec à Montréal (UQ&Agrave;M)</a>. 
+                    <p>I am an assistant professor at the 
+                        <a id="affiliation"></a>.
+                        <!--<a href="https://economie.esg.uqam.ca/"target="_blank">Université du Québec à Montréal (UQAM)</a>.-->
                     <p>My research stands at the crossroads of <b>Development Economics</b>, <b>Urban Economics</b>, and <b>Economic History</b>. It relies extensively on original data and GIS techniques.</p>
     
 
@@ -48,7 +50,7 @@
                     <p class="top-5">Contact:</p> 
                     <p><a id="mail"></a></p>
 
-                    <p class="top-5">You can download my CV <a href="../MarlonSeror.github.io/cv/Seror_CV.pdf"target="_blank">here</a>.</p>
+                    <p class="top-5">You can download my CV <a id="cv_link"></a>.</p>
                     
                     
             </div>
@@ -72,7 +74,7 @@
         element.setAttribute("href", "mailto:seror.marlon@uqam.ca");
 
         element.addEventListener("mouseover", function( event){
-            event.target.setAttribute("style", "text-decoration:underline; color:black;");
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
         }, false);
         element.addEventListener("mouseleave", function( event){
             event.target.setAttribute("style", "text-decoration:none; color:black;");
@@ -80,5 +82,38 @@
 
     </script>
 
+    <script>
+        var institution = 'Université du Québec à Montréal (UQAM)',
+        element = document.getElementById('affiliation');
+
+        element.innerHTML = institution;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "https://economie.esg.uqam.ca");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
+    <script>
+        var here = 'here',
+        element = document.getElementById('cv_link');
+        
+        element.innerHTML = here;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "../MarlonSeror.github.io/cv/Seror_CV.pdf");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
 
 </html>
