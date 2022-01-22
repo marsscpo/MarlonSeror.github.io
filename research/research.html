@@ -28,7 +28,7 @@
                     <h2>Ongoing Research</h2>
                     <ul>
                         <li><p><b><a id="title_migrants_firms"></a></b> 
-                            (Conditionally accepted, <i>American Economic Review</i>; <a id="lv_migrants_firms"></a>, <a id="wp_migrants_firms"></a>), 
+                            (Conditionally accepted, <i>American Economic Review</i>; <a id="paper_migrants_firms"></a>, <a id="app_migrants_firms"></a>), 
                             <small>joint with <a id="coauthor_imbert_clement"></a>, <a id="coauthor_zhang_yifan"></a> and <a id="coauthor_zylberberg_yanos1"></a>.</small>
                             </p>
                             <p align="justify">How does rural-urban migration shape urban production in developing
@@ -130,12 +130,29 @@
     </script>
 
     <script>
-        var lv_migrants_firms = 'Latest Version',
-        element = document.getElementById('lv_migrants_firms');
+        var paper_migrants_firms = 'Paper',
+        element = document.getElementById('paper_migrants_firms');
 
-        element.innerHTML = lv_migrants_firms;
+        element.innerHTML = paper_migrants_firms;
         element.setAttribute("style", "color:black; text-decoration:none;");
         element.setAttribute("href", "../papers/Migrants_and_Firms.pdf");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
+
+    <script>
+        var app_migrants_firms = 'Appendix',
+        element = document.getElementById('app_migrants_firms');
+
+        element.innerHTML = app_migrants_firms;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "../papers/Migrants_and_Firms_Appendix.pdf");
 
         element.addEventListener("mouseover", function( event){
             event.target.setAttribute("style", "text-decoration:underline; color:gray;");
