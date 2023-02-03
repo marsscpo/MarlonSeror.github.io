@@ -66,7 +66,7 @@
                             <p><small><i>Media coverage: <a href="http://www2.nber.org/digest/aug20/w27053.shtml"target="_blank">NBER Digest</a>, <a href="https://www.economist.com/china/2020/09/17/the-families-of-chinas-pre-communist-elite-remain-privileged"target="_blank">The Economist (2020)</a>, <a href="https://www.economist.com/graphic-detail/2022/06/09/the-grandchildren-of-chinas-pre-revolutionary-elite-are-unusually-rich"target="_blank">The Economist (2022)</a>.</i></small></p>
                         </li>
                         <li><p><b><a id="title_156"></a></b>
-                            (<a id="lv_156">Latest Version</a>, <a id="wp_156">NBER WP</a>), 
+                            (<a id="lv_156">Latest Version</a>, <a id="wp_156">NBER WP</a>, <a id="app_156">Appendix</a>), 
                             <small>joint with <a id="coauthor_heblich_stephan"></a>, H. Xu (CCB) and <a id="coauthor_zylberberg_yanos2"></a>.</small>
                         </p>
                         <!--
@@ -292,6 +292,23 @@ element.addEventListener("mouseleave", function( event){
 }, false);
 
 </script>
+
+<script>
+    var app_156 = 'Appendix',
+    element = document.getElementById('app_156');
+    
+    element.innerHTML = app_156;
+    element.setAttribute("style", "color:black; text-decoration:none;");
+    element.setAttribute("href", "../papers/MRP_Appendix.pdf");
+    
+    element.addEventListener("mouseover", function( event){
+        event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+    }, false);
+    element.addEventListener("mouseleave", function( event){
+        event.target.setAttribute("style", "text-decoration:none; color:black;");
+    }, false);
+    
+    </script>
 
 <script>
     var title_random_river = 'Random river: Trade and rent extraction in imperial China',
