@@ -139,6 +139,7 @@ hr{
     
     main figure img{
         float:left;
+        margin-top: -2%;
     }
 
     header{
