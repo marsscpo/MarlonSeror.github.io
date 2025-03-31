@@ -115,6 +115,9 @@
                     <h2>Policy Reports and Publications</h2>
                     <ul>
                         <li>
+                            <p><b><a id="wp_canal_lachine"></a> </b> (2023). <small>Report for Parks Canada, Cahier scientifique du CIRANO 2023s-25. Joint with K. Behrens and F. Mayneris.</small></p>
+                        </li>
+                        <li>
                             <p><b>Glass Barriers: Constraints to Women's Small-Scale Cross-Border Trade
                                 in Cambodia and Lao PDR</b> (2018). <small>In P. Brenton and M. Bartley Johns (Eds.), <i>How
                                     Trade Helps Reduce Poverty, and What More Can Be Done</i>. World Bank and World
@@ -477,6 +480,23 @@ element.addEventListener("mouseleave", function( event){
     event.target.setAttribute("style", "text-decoration:none; color:black;");
 }, false);
 
+</script>
+
+<script>
+    var wp_canal_lachine = 'Répercussions socio-démographiques et retombées fiscales de la réhabilitation et de la mise en valeur du lieu historique national du Canal-de-Lachine',
+    element = document.getElementById('wp_canal_lachine');
+    
+    element.innerHTML = wp_canal_lachine;
+    element.setAttribute("style", "color:black; text-decoration:none;");
+    element.setAttribute("href", "../papers/Canal_Lachine_cirano.pdf");
+    
+    element.addEventListener("mouseover", function( event){
+        event.target.setAttribute("style", "text-decoration:underline; color:gray;");
+    }, false);
+    element.addEventListener("mouseleave", function( event){
+        event.target.setAttribute("style", "text-decoration:none; color:black;");
+    }, false);
+    
 </script>
 
 <script>
